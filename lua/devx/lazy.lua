@@ -42,6 +42,13 @@ require("lazy").setup({
     { 'hrsh7th/nvim-cmp' },
     { 'L3MON4D3/LuaSnip' },
     { 'ThePrimeagen/harpoon' },
-    { '907th/vim-auto-save' }
+    { '907th/vim-auto-save' },
+    { 'tpope/vim-surround' },
+    {
+        'stevearc/oil.nvim',
+        opts = {},
+        -- Optional dependencies
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+    }
 }
 , opts)
