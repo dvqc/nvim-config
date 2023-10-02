@@ -17,16 +17,13 @@ require("lazy").setup({
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
     {
-        "catppuccin/nvim",
-        name = "catppuccin",
-        priority = 1000,
+        'AlexvZyl/nordic.nvim',
         lazy = false,
+        priority = 1000,
         config = function()
-            -- load the colorscheme here
-            vim.cmd([[colorscheme catppuccin]])
-        end,
+            require 'nordic' .load()
+        end
     },
-
     { "nvim-treesitter/nvim-treesitter",  build = ":TSUpdate" },
 
     { "mbbill/undotree" },
