@@ -21,7 +21,7 @@ require("lazy").setup({
         lazy = false,
         priority = 1000,
         config = function()
-            require 'nordic' .load()
+            require 'nordic'.load()
         end
     },
     { "nvim-treesitter/nvim-treesitter",  build = ":TSUpdate" },
@@ -46,6 +46,11 @@ require("lazy").setup({
         opts = {},
         -- Optional dependencies
         dependencies = { "nvim-tree/nvim-web-devicons" },
+    },
+    {
+        "folke/trouble.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        opts = {}
     }
 }
 , opts)
