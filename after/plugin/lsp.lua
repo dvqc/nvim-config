@@ -2,7 +2,7 @@ local lsp_zero = require('lsp-zero')
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {},
+  ensure_installed = {'astro', 'html', 'cssls', 'jsonls', 'lua_ls', 'tailwindcss', 'tsserver'},
   handlers = {
     lsp_zero.default_setup,
   },

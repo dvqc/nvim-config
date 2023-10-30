@@ -11,6 +11,9 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
+    { 'williamboman/mason.nvim' },
+    { 'williamboman/mason-lspconfig.nvim' },
+
     {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.3',
@@ -29,9 +32,6 @@ require("lazy").setup({
     { "mbbill/undotree" },
 
     { "tpope/vim-fugitive" },
-
-    { 'williamboman/mason.nvim' },
-    { 'williamboman/mason-lspconfig.nvim' },
 
     { 'VonHeikemen/lsp-zero.nvim',        branch = 'v3.x' },
     { 'neovim/nvim-lspconfig' },
