@@ -28,3 +28,5 @@ vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
 vim.opt.scrolloff = 8
+
+vim.opt.clipboard = 'unnamedplus'
