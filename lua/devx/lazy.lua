@@ -27,13 +27,13 @@ require("lazy").setup({
             require 'nordic'.load()
         end
     },
-    { "nvim-treesitter/nvim-treesitter",  build = ":TSUpdate" },
+    { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 
     { "mbbill/undotree" },
 
     { "tpope/vim-fugitive" },
 
-    { 'VonHeikemen/lsp-zero.nvim',        branch = 'v3.x' },
+    { 'VonHeikemen/lsp-zero.nvim',       branch = 'v3.x' },
     { 'neovim/nvim-lspconfig' },
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/nvim-cmp' },
@@ -48,9 +48,12 @@ require("lazy").setup({
         dependencies = { "nvim-tree/nvim-web-devicons" },
     },
     {
-        "folke/trouble.nvim",
+        'folke/trouble.nvim',
         dependencies = { "nvim-tree/nvim-web-devicons" },
         opts = {}
+    },
+    {
+        'sbdchd/neoformat'
     }
 }
 , opts)
