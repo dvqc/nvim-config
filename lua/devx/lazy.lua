@@ -42,10 +42,15 @@ require("lazy").setup({
     { '907th/vim-auto-save' },
     { 'tpope/vim-surround' },
     {
-        'stevearc/oil.nvim',
-        opts = {},
-        -- Optional dependencies
-        dependencies = { "nvim-tree/nvim-web-devicons" },
+        "nvim-tree/nvim-tree.lua",
+        version = "*",
+        lazy = false,
+        dependencies = {
+            "nvim-tree/nvim-web-devicons",
+        },
+        config = function()
+            require("nvim-tree").setup {}
+        end,
     },
     {
         'folke/trouble.nvim',

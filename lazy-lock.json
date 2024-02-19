@@ -10,6 +10,7 @@
   "nordic.nvim": { "branch": "main", "commit": "36f6edce282266996239043a969df1a7cacbe68d" },
   "nvim-cmp": { "branch": "main", "commit": "538e37ba87284942c1d76ed38dd497e54e65b891" },
   "nvim-lspconfig": { "branch": "master", "commit": "021906284dcfb938bc236f8295af2650c60cb807" },
+  "nvim-tree.lua": { "branch": "master", "commit": "d35a8d5ec6358ada4b058431b367b32360737466" },
   "nvim-treesitter": { "branch": "master", "commit": "e24dab6696aa2a6682a117e241adc32c38e93d53" },
   "nvim-web-devicons": { "branch": "master", "commit": "7fd8d7f08be824d9d362fb2d9800b84eb15786c1" },
   "oil.nvim": { "branch": "master", "commit": "bf753c3e3f8736939ad5597f92329dfe7b1df4f5" },
