@@ -53,6 +53,11 @@ require("lazy").setup({
         end,
     },
     {
+        "pmizio/typescript-tools.nvim",
+        dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+        opts = {},
+    },
+    {
         'folke/trouble.nvim',
         dependencies = { "nvim-tree/nvim-web-devicons" },
         opts = {}
