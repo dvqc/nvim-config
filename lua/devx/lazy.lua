@@ -68,6 +68,9 @@ require("lazy").setup({
     },
     {
         'sbdchd/neoformat'
+    },
+    {
+        'Exafunction/codeium.vim', event = 'BufEnter'
     }
 }
 , opts)
