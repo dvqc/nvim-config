@@ -11,9 +11,6 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
-    { 'williamboman/mason.nvim' },
-    { 'williamboman/mason-lspconfig.nvim' },
-
     {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.3',
@@ -28,12 +25,11 @@ require("lazy").setup({
         end
     },
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
-
     { "mbbill/undotree" },
-
     { "tpope/vim-fugitive" },
-
-    { 'VonHeikemen/lsp-zero.nvim',       branch = 'v3.x' },
+    { 'VonHeikemen/lsp-zero.nvim', branch = 'v3.x', config = function() require("lsp-zero").extend_lspconfig() end },
+    { 'williamboman/mason.nvim' },
+    { 'williamboman/mason-lspconfig.nvim' },
     { 'neovim/nvim-lspconfig' },
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/nvim-cmp' },
@@ -54,7 +50,7 @@ require("lazy").setup({
     },
     {
         "pmizio/typescript-tools.nvim",
-        dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+        dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig", "VonHeikemen/lsp-zero.nvim" },
         opts = {},
     },
     {

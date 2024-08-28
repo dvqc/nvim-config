@@ -1,2 +1,2 @@
 require('devx')
-print('hello mortal')
+print('Hello Mortal')
